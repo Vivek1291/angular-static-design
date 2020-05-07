@@ -1,0 +1,34 @@
+<div class="gernal-instruction-container section-container">
+    <mat-card class="mat-elevation-z2">
+        <div class="custom-toolbar heading-container">
+            <div class="title">Read the instruction-carefully</div>    
+        </div>
+        <div class="body-content">
+            <div>
+                <span>Please select training session name</span>
+                <mat-form-field>
+                    <mat-label>Select</mat-label>
+                    <mat-select [ngModel]= selectedValue>
+                        <mat-option value="select">
+                            Select
+                        </mat-option>
+                        <mat-option value="github">
+                            Github Feburary
+                        </mat-option>
+                    </mat-select>
+                </mat-form-field>
+            </div>
+            <div class="toggle-slide">
+                <div *ngFor="let value of values">
+                    <mat-slide-toggle
+                        class="example-margin"
+                        color="accent"
+                        [checked]="value.checked"
+                        [disabled]="value.disabled">
+                        {{value.label}}
+                    </mat-slide-toggle>
+                </div>
+            </div>
+        </div>
+    </mat-card>
+</div>

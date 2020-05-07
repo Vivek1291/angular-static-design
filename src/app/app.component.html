@@ -1,0 +1,16 @@
+
+<!-- Toolbar -->
+<div class="toolbar" role="banner">
+  <mat-toolbar color="primary" >
+      <a routerLink="/" class="home-link"><span >My application</span></a>
+      <div class="navigation-container">
+        <a routerLink="/question" routerLinkActive="active" color="secondary">Question</a>
+        <!-- <a routerLink="/fourOfFour" routerLinkActive="active" color="secondary">404 Page</a> -->
+        <a (click)="openLoginDialog()" color="primary">Login</a>
+      </div>
+  </mat-toolbar>
+</div>
+
+<div class="content" role="main">
+  <router-outlet></router-outlet>
+</div>

@@ -1,0 +1,47 @@
+<div class="question-container section-container">
+    <mat-card class="mat-elevation-z2">
+        <div class="custom-toolbar flex-container heading-container">
+            <div class="left-content flex-1">Question 3/10</div>
+            <div class="right-content flex-container">
+                <!-- <img class="img-container" src=""/> -->
+                <div>
+                    <span class="material-icons image-cicle">
+                            account_circle
+                    </span>
+                </div>
+                <div class="right-align user-info">
+                    <div class="user-name">Welcome Your Name</div>
+                    <div class="test-time red-color">Time Remaning</div>
+                </div>
+            </div>
+        </div>
+        <div class="question-content flex-container">
+            <div class="question-section flex-1">
+                <div class="question-box">
+                    When do you use the option to clone a repository
+                </div>
+            </div>
+            <div class="answer-section flex-1">
+                <div class="title">Answer</div>
+                <div class="answer-form-field">
+                    <!-- <form> -->
+                        <div>
+                                <mat-radio-group
+                                aria-labelledby="options"
+                                class="options"
+                                [(ngModel)]="selectedAnswer">
+                                <mat-radio-button class="radio-button" *ngFor="let option of options" [value]="option">
+                                  {{option}}
+                                </mat-radio-button>
+                              </mat-radio-group>
+                        </div>
+                    <!-- </form> -->
+                </div>
+                <div class="button-container right-align">
+                    <button mat-raised-button color="primary">Previous</button>
+                    <button mat-raised-button color="primary">Next</button>
+                </div>
+            </div>
+        </div>
+    </mat-card>
+</div>

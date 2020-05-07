@@ -1,0 +1,18 @@
+.toolbar {
+    .home-link {
+        flex: 1;
+        color: #fff;
+        text-decoration: none;
+
+    }
+    .navigation-container {
+        a {
+            display: inline-block;
+            padding: 0 15px;
+            cursor: pointer;
+            color: #fff;
+            font-size: 14px;
+            text-decoration: none;
+        }
+    }
+}
