@@ -1,6 +1,9 @@
-.login-container {
-    .mat-form-field {
-        width: 100%; 
+.login-page {
+    min-height: 90vh;
+    .mat-card {
+        width: 100%;
+        max-width: 400px;
+        text-align: center;
     }
     .image-container {
         max-width: 200px;
@@ -9,6 +12,9 @@
         img {
             max-width: 100%;
         }
+    }
+    .mat-form-field {
+        width: 100%; 
     }
     .button-container {
         button {

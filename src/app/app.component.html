@@ -3,10 +3,21 @@
 <div class="toolbar" role="banner">
   <mat-toolbar color="primary" >
       <a routerLink="/" class="home-link"><span >My application</span></a>
-      <div class="navigation-container">
+      <div class="navigation-container flex-1">
         <a routerLink="/question" routerLinkActive="active" color="secondary">Question</a>
+        <a routerLink="/login" routerLinkActive="active" color="secondary">Login-page</a>
         <!-- <a routerLink="/fourOfFour" routerLinkActive="active" color="secondary">404 Page</a> -->
+      </div>
+      <div class="login-section">
         <a (click)="openLoginDialog()" color="primary">Login</a>
+        <button mat-button [matMenuTriggerFor]="menu"> <span class="material-icons image-cicle">
+            account_circle
+          </span>
+        </button>
+        <mat-menu #menu="matMenu">
+          <button mat-menu-item>Profile</button>
+          <button mat-menu-item>Logout</button>
+        </mat-menu>
       </div>
   </mat-toolbar>
 </div>

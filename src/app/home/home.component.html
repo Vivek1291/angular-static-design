@@ -19,16 +19,22 @@
                 </mat-form-field>
             </div>
             <div class="toggle-slide">
-                <div *ngFor="let value of values">
-                    <mat-slide-toggle
+                <div *ngFor="let value of values" class="item-list">
+                    <!-- <mat-slide-toggle
                         class="example-margin"
                         color="accent"
                         [checked]="value.checked"
                         [disabled]="value.disabled">
                         {{value.label}}
-                    </mat-slide-toggle>
+                    </mat-slide-toggle> -->
+                    <span class="span-circle"></span>
+                    <span>{{value.label}}</span>
                 </div>
             </div>
+        </div>
+        <div class="button-container right-align">
+            <button mat-raised-button color="primary">Continue</button>
+            <button mat-raised-button color="primary">Cancel</button>
         </div>
     </mat-card>
 </div>

@@ -13,8 +13,9 @@ export class AppComponent {
 
   openLoginDialog(): void  {
     const dialogRef = this.dialog.open(LoginComponent, {
-      width: '40%',
-      minHeight: '250px'
+      width: '100%',
+      minHeight: '250px',
+      maxWidth: '400px'
     })
     console.log("Event click");
   }

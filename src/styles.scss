@@ -52,3 +52,38 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; background-
     max-width: 1170px;
     margin: 30px auto;
 }
+
+.v-align {
+    align-items: center;
+}
+
+.h-align {
+    justify-content: center;
+}
+.span-circle {
+    width: 25px;
+    height: 5px;
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    background-color: #ccc;
+    margin-right: 10px;
+    &::before, &::after {
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        top: 50%;
+        transform: translateY(-50%)
+    }
+    &::before {
+        content: '';
+        background-color: #3f51b5;
+        left: 0;  
+    }
+    &::after {
+        content: '';
+        right: 0;
+        background-color: #ff4081;
+    }
+}

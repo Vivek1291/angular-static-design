@@ -1,0 +1,26 @@
+<div class="login-page flex-container v-align h-align">
+    <mat-card>
+        <div class="image-container">
+            <img src="assets/images/download.png" alt="icon" />
+        </div>
+        <form class="margin-top-30">
+            <div>
+                <mat-form-field appearance="outline">
+                    <mat-label>Email</mat-label>
+                    <input matInput type="text" [formControl]="username">
+                </mat-form-field>
+            </div>
+            <div>
+                <mat-form-field appearance="outline">
+                    <mat-label>Password</mat-label>
+                    <input matInput type="password" [formControl]="password">
+                </mat-form-field>
+            </div>
+            <div class="button-container">
+                <button mat-raised-button color="primary">Log In</button>
+                <button mat-raised-button color="primary">Cancel</button>
+            </div>
+            
+        </form>
+    </mat-card>
+</div>

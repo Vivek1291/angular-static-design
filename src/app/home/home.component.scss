@@ -13,4 +13,15 @@
             font-size: 18px;
         }
     }
+    .button-container {
+        button {
+            width: 150px;
+            margin: 0 10px;
+        }
+    }
+    .toggle-slide {
+        .item-list {
+            margin-bottom: 5px;
+        }
+    }
 }
